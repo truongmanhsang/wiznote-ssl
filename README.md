@@ -7,4 +7,6 @@ WizNote server on container with SSL.
 3. docker build -t ssl-wiz-server .
 4. docker run --name ssl-wiz --restart=always -it -d -v /usr/share/hassio/share/wizdata/:/wiz/storage -v /etc/localtime:/etc/localtime -v /usr/share/hassio/ssl/:/etc/nginx/ssl/ -p 8080:80 -p 9269:9269/udp -p 8888:443 ssl-wiz-server
 
+(Change base image in Dockerfile to match your system.)
+
 [https://www.wiz.cn/](https://www.wiz.cn/)
